@@ -1,0 +1,193 @@
+Q.1 <!DOCTYPE html> is it a tag of html? If not, what is it and why do we use it? write in 55 word
+
+
+Ans - Yes, <!DOCTYPE html> is a declaration used in HTML to specify the document type. It is not a tag but a document type declaration. It informs the web browser about the version of HTML being used. It ensures that the web page is rendered correctly by the browser according to the specified HTML standard.
+
+
+Q.2 Explain Semantic tags in html? And why do we need it?
+
+Ans - Semantic tags in HTML are elements that convey meaning about the content they wrap. Examples include <header>, <nav>, <article>, <section>, and <footer>. They improve accessibility, search engine optimization, and code readability. Semantic tags help structure the page and provide context to assistive technologies and search engines.
+
+
+Q.3 Differentiate between HTML Tags and Elements?
+
+Ans - HTML tags are used to define the beginning and end of an element in HTML. Elements refer to the entire construct, including the opening and closing tags and the content within them.
+
+
+💡 **Q.4** Build Your Resume using HTML only
+
+Ans -
+
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>My Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    
+    h1 {
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    
+    p {
+      margin: 0;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    
+    .section-content {
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+    
+    .contact-info {
+      margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hey I am Anand Rajput</h1>
+  <div class="contact-info">
+    <p>Email: Anandrajput@example.com</p>
+    <p>Phone: 123-456-7890</p>
+    <p>Location: Madhubani, Bihar</p>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="section-content">
+      <h3>Bachelor of Science in Computer Science</h3>
+      <p>LNMU darbhanga, 2022</p>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="section-content">
+      <h3>Software Developer</h3>
+      <p>Accenture Solution PVT. LTD. , June 2023</p>
+      <ul>
+        <li>frontend UI Design</li>
+        <li>Backened Issue Found</li>
+        <li>Database 3</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-content">
+      <ul>
+        <li>Programming languages: HTML, CSS, JavaScript</li>
+        <li>Frameworks: Bootstrap, jQuery</li>
+        <li>Version Control: Git</li>
+        <li>Database: SQL</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+
+Q.6 What are some of the advantages of HTML5 over its previous versions?
+
+Ans - 
+Some advantages of HTML5 over its previous versions include native support for multimedia elements (audio, video), canvas for drawing graphics, improved form controls, enhanced semantics with new elements (header, nav, etc.), built-in geolocation support, offline storage capabilities, and better cross-platform compatibility with mobile devices.
+
+Q.7 Create a simple Music player using html only
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <style>
+
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .player {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 500px;
+      justify-content: center;
+    }
+    
+    .play-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="player">
+    <audio id="audio" controls src="तोहरा_याद_में_पिबौ_सिगरेट_गे_-_Tohra_Yaad_Me_Pibau_Cigrate_-_Bansidhar_Chaudhary_-_JK_Yadav_Films(256k).mp3"></audio>
+    <button id="playBtn" class="play-btn">Play</button>
+  </div>
+  
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+    
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = 'Pause';
+      } else {
+        audio.pause();
+        playBtn.textContent = 'Play';
+      }
+    });
+  </script>
+</body>
+</html>
+
+Q.8 What is the difference between <figure> tag and <img> tag?
+
+Ans - The <figure> tag is used to encapsulate a self-contained content, such as an image, illustration, diagram, or code snippet, along with an optional caption specified using the <figcaption> tag. The <img> tag, on the other hand, is specifically used for embedding an image in the HTML document without any additional content or caption.
+
+Q.9 What’s the difference between html tag and attribute and give example of some global attributes?
+
+The HTML tag represents an element in the HTML structure, such as <div> or <p>, which defines the type and purpose of the content. An attribute, on the other hand, provides additional information or modifies the behavior of an HTML tag. Global attributes like "class", "id", "style", and "title" can be used on various HTML tags to provide common functionalities and styling.
+
+
+
+
+
+
+
+
+
+
